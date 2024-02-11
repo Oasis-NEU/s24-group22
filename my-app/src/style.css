@@ -1,0 +1,63 @@
+:root {
+    background-color: #242424;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.search-bar {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: block;
+}
+.projects {
+    display: inline-block;
+    margin-right: 30px;
+}
+.yes-button {
+    background-color: rgb(4, 155, 4);
+    border: 1px solid black;
+    height: 30px;
+    width: 75px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.yes-button:hover {
+    background-color: rgb(26, 193, 26);
+}
+.yes-button:active {
+    background-color: grey;
+}
+
+.no-button {
+    background-color: red;
+    border: 1px solid black;
+    height: 30px;
+    width: 75px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.no-button:hover {
+    background-color: rgb(206, 83, 83);
+}
+.no-button:active {
+    background-color: grey;
+}
+
+.thumbnail {
+    height: 150px;
+    width: 150px;
+}
+
+.display-text {
+    color: white
+}
+
+.projects-box {
+    background-color: #484848;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
