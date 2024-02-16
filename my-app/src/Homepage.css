@@ -1,0 +1,22 @@
+:root {
+    background-color: dimgray;
+    height: 100%;
+    width: 100%;
+}
+
+.homepage_dropdown_bar {
+    display: inline-block;
+    background-color: blanchedalmond;
+    width: 100%;
+}
+
+.homepage_backdrop {
+    width: 100%;
+    padding-bottom: 1000px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 1400px;
+}
+
