@@ -20,7 +20,7 @@ function Homepage() {
                         {isHovered? "Projects!" : "Projects?"}
                     </a>
                     <a href = "/people"className = "homepage_redirect px-4 justify-center" ref={hoverRef}> People {isHovered? 'People!' : 'People.'}</a>
-                    <a href="/Profile" className='homepage_redirect px-4 justify-center'> Profile </a>
+                    <a href="/profile" className='homepage_redirect px-4 justify-center'> Profile </a>
                     <a href = "/Hotdog" className='homepage_redirect px-4 justify-center hover:shadow-md transition-all'> hotdog </a>
                     <a href = "/home" className='homepage_redirect px-4 justify-center'> Cinder </a>
                     </ul>
