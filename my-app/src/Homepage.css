@@ -1,0 +1,55 @@
+:root {
+    background-color: dimgray;
+    height: 100%;
+    width: 100%;
+}
+
+.homepage_dropdown_bar {
+    display: inline-block;
+    background-color: blanchedalmond;
+    width: 100%;
+}
+
+.homepage_backdrop {
+    width: 100%;
+    padding-bottom: 1000px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 1400px;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+}
+
+.homepage_redirect {
+    transition-property: all;
+}
+
+.shadow-md {
+    box-shadow: var(--tw-shadow);
+
+}
+
+.shadow-sm {
+    --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+}
+
+.transition-all {
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    --tw-bg-opacity: 1;
+    background-color: rgb(167, 205, 189/var(--tw-bg-opacity));
+    filter: drop-shadow(20px 20px red);
+}
