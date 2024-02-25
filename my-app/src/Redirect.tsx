@@ -9,7 +9,7 @@ export default function Redirect() {
         <Routes>
             <Route index element={<Homepage />}></Route>
             <Route path="/home" element={<Homepage />}></Route>
-            <Route path="/people" element={<App></App>}></Route>
+            <Route path="/projects" element={<App></App>}></Route>
             <Route path="/profile" element={<ProfilePage></ProfilePage>}></Route>
         </Routes>
     </BrowserRouter>
