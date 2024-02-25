@@ -1,0 +1,15 @@
+.ProfilePageBackground {
+    background-color: aqua;
+    width: max-content;
+    height: 100px;
+}
+
+.ProfilePageInformation {
+    display: inline-block;
+    background-color: blueviolet;
+    margin-right: 30px;
+}
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
