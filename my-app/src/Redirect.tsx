@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import App from './App'
-import Homepage from './Homepage'
-import ProfilePage from './ProfilePage'
+import App from './App/App'
+import Homepage from './Home/Homepage'
+import ProfilePage from './Profile/ProfilePage'
 import Login from './Login/login'
-import Dashboard from './Login/dashboard'
+import Dashboard from './Dashboard/dashboard'
 
 export default function Redirect() {
     return <div>

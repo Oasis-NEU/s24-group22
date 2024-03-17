@@ -4,7 +4,6 @@ import project2Logo from '/images/project2.jpg'
 import project3Logo from '/images/project3.jpg'
 import project4Logo from '/images/project4.svg'
 import './App.css'
-import Login from './Login/login'
 
 function App() {
   const [count, setCount] = useState(0);

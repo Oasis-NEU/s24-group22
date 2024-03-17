@@ -5,6 +5,7 @@ import { createClient } from '@supabase/supabase-js';
 import { Auth } from '@supabase/auth-ui-react';
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import "./login.css"
 
 const supabase = createClient(
@@ -39,22 +40,46 @@ function Login() {
                     />
                 </header>
             </div>
-            {/* <div className="login-box-container">
-                <div className="login-container">
-                    <form action="/login_page">
-                        <label id="email-input">Email:</label><br />
-                        <input id="email-input" type="text" placeholder="e.g. name123@gmail.com" size={35}></input><br /><br />
-                        <label id="password-input">Password:</label><br />
-                        <input id="password-input" type="password" placeholder="e.g. ilovecinder123" size={35}></input><br /><br />
-                        <input type="submit" value="Submit" />
-                    </form>
-                </div>
-                <div className="register-container">
-                    <a href="#">Don't have an account?</a>
-                    <a href="#">Forgot password?</a>
-                </div>
-            </div> */}
         </div >
     )
 }
 export default Login;
+
+function App() {
+    const [session, setSession] = useState(null);
+
+    useEffect(() => {
+        supabase.auth.getSession().then(({ data: { session } }) => {
+            setSession(session);
+        });
+
+        const {
+            data: { subscription }
+        } = supabase.auth.onAuthStateChange(( _event, session ) => {
+            setSession(session);
+        });
+
+        return () => subscription.unsubscribe();
+    });
+
+    const logOut = () => {
+        supabase.auth.signOut();
+    }
+
+    if (!session) {
+        return (
+            <Auth 
+                supabaseClient={supabase} 
+                appearance={{theme: ThemeSupa}}
+                providers={[]}
+            />
+        );
+    } else {
+        return (
+            <div>
+                <h1>LOGGED IN!</h1>
+                <button onClick={(e) => logOut(e)}>Log Out</button>
+            </div>
+        )
+    }
+}
