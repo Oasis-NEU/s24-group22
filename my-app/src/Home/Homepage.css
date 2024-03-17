@@ -1,5 +1,5 @@
 :root {
-    background-color: dimgray;
+    background-color: #242424;
     height: 100%;
     width: 100%;
 }
@@ -17,7 +17,7 @@
     padding-right: 0px;
     margin-top: 0px;
     margin-left: 0px;
-    margin-right: 1400px;
+    margin-right: 800px;
 }
 
 .px-4 {
@@ -38,6 +38,17 @@
     transition-property: all;
 }
 
+.button {
+    border: 2px solid black;
+    border-color: black;
+    color: black;
+    background-color: blanchedalmond;
+}
+
+.test-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .shadow-md {
     box-shadow: var(--tw-shadow);
 
@@ -52,4 +63,11 @@
     --tw-bg-opacity: 1;
     background-color: rgb(167, 205, 189/var(--tw-bg-opacity));
     filter: drop-shadow(20px 20px red);
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
