@@ -1,4 +1,3 @@
-
 :root {
   background-color: #242424;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -9,10 +8,12 @@
   margin-left: 20px;
   display: block;
 }
+
 .projects {
   display: inline-block;
   margin-right: 30px;
 }
+
 .yes-button {
   background-color: rgb(4, 155, 4);
   border: 1px solid black;
@@ -22,9 +23,11 @@
   margin-right: 10px;
   font-weight: bold;
 }
+
 .yes-button:hover {
   background-color: rgb(26, 193, 26);
 }
+
 .yes-button:active {
   background-color: grey;
 }
@@ -37,9 +40,11 @@
   cursor: pointer;
   font-weight: bold;
 }
+
 .no-button:hover {
   background-color: rgb(206, 83, 83);
 }
+
 .no-button:active {
   background-color: grey;
 }
