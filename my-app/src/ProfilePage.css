@@ -7,6 +7,7 @@
 
 .ProfilePageInformation {
     display: inline-block;
+    backdrop-filter: blur(100px);
     background-color: rgb(20, 84, 97);
     width: 70%;
     height: 100%;
@@ -27,8 +28,30 @@
 }
 
 .ProfileBanner {
-    width: 63%;
+    width: 73%;
     height: 20%;
     border: 5px solid black;
+    margin: 10px;
+}
+
+.ProfileSkills {
+    list-style-type: square;
+    border: #242424;
+    margin: 10px;
+}
+
+.SkillsBox {
+    border: 5px solid #242424;
+    width: 17%;
+    height: 63%;
+    margin: 10px;
+    float: left;
+}
+
+.ProfileAboutMe {
+    border: 5px solid black;
+    width: 73%;
+    height: 63%;
+    float: left;
     margin: 10px;
 }
