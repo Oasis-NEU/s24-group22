@@ -18,7 +18,6 @@ function Homepage() {
         let path = pathName; 
         navigate(path);
       }
->>>>>>> d9e2f233c46c66a97730fc0bdc8794f0cb4550b0:my-app/src/Homepage.tsx
 
     return <div className = "homepage_backdrop">
             <nav className = "homepage_dropdown_bar sticky">
@@ -47,7 +46,6 @@ function Homepage() {
                     <a href = "/Hotdog" className = 'homepage_redirect px-4 justify-center hover:shadow-md transition-all'> hotdog </a>
                     <a href = "/home" className = 'homepage_redirect px-4 justify-center'> Cinder </a>
 
->>>>>>> d9e2f233c46c66a97730fc0bdc8794f0cb4550b0:my-app/src/Homepage.tsx
                     </ul>
                     */} 
                 </div>
