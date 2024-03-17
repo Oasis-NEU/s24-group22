@@ -10,6 +10,7 @@ function Homepage() {
         console.log("Button clicked!")
     }
 
+
     
     let navigate = useNavigate(); 
 
@@ -17,18 +18,38 @@ function Homepage() {
         let path = pathName; 
         navigate(path);
       }
+>>>>>>> d9e2f233c46c66a97730fc0bdc8794f0cb4550b0:my-app/src/Homepage.tsx
 
     return <div className = "homepage_backdrop">
             <nav className = "homepage_dropdown_bar sticky">
                 <div className="justified_centering" >
+                    {/*
+                    <ul>
+                    */}
                     
+
                     <div className = "flex-box">
                         <button className = "button test-button" onClick={() => routeChange('/projects')}>Projects</button>
-                        <button className = "button test-button" onClick={() => routeChange('/profile')}>People</button>
+                        <button className = "button test-button" onClick={() => routeChange('/people')}>People</button>
                         <button className = "button test-button" onClick={() => routeChange('/hotdog')}>Hotdog</button>
                         <button className = "button test-button" onClick={() => routeChange('/home')}>Home</button>
                     </div>
 
+
+                    {/*
+                    <a href = "/projects" className = "homepage_redirect px-4 justify-center test-button">
+                    </a>
+
+                    <a href = "https://www.youtube.com/" className = "homepage_redirect px-4 justify-center test-button">
+                    </a>
+                    
+                    <a href = "/Profile" className = 'homepage_redirect px-4 justify-center'> Profile </a>
+                    <a href = "/Hotdog" className = 'homepage_redirect px-4 justify-center hover:shadow-md transition-all'> hotdog </a>
+                    <a href = "/home" className = 'homepage_redirect px-4 justify-center'> Cinder </a>
+
+>>>>>>> d9e2f233c46c66a97730fc0bdc8794f0cb4550b0:my-app/src/Homepage.tsx
+                    </ul>
+                    */} 
                 </div>
             </nav>
 
