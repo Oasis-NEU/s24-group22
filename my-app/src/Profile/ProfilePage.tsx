@@ -47,27 +47,27 @@ export default function ProfilePage() {
                 <div><button style={buttonStyle}>Settings</button></div>
             </div>
             <div className="ProfilePageInformation">
-                <img src="images/mandarin_duck.jpg" className="ProfilePictureBox"></img>
-                <img src="images/mandarin_duck.jpg" className="ProfileBanner"></img>
+                <img src="images/defaultpfp.jpg" className="ProfilePictureBox"></img>
+                <img src="images/linkedinbanner.jpg" className="ProfileBanner"></img>
                 <div className="SkillsBox">
-                    <div> Skills </div>
-                    <ul className="ProfileSkills">
-                        <li>
-                            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                        </li>
+                    <div className="ProfileSkills"> Skills
+                        <ul>
+                            <li>
+                                Java
+                            </li>
 
-                        <li>
-                            Skill 2
-                        </li>
+                            <li>
+                                TypeScript
+                            </li>
 
-                        <li>
-                            Skill 3
-                        </li>
-
-                    </ul>   
+                            <li>
+                                HTML
+                            </li>
+                        </ul>
+                    </div>   
                 </div>
                 <div className="ProfileAboutMe">
-                    <p > About me: </p> 
+                    <p > About Me: I love coding!</p> 
                 </div>
             </div>
         </div>
