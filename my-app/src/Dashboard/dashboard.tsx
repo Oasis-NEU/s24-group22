@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
     const [searchValue, setSearchValue] = useState('');
+
+    let navigate = useNavigate(); 
+
+    const routeChange = (pathName: string) =>{ 
+        let path = pathName; 
+        navigate(path);
+      }
 
     const buttonStyle = {
         backgroundColor: 'black',
@@ -67,12 +75,12 @@ function Dashboard() {
     return (
         <div>
             <div style={containerStyle}>
-                <button style={buttonStyle}>Homepage</button>
-                <div><button style={buttonStyle}>Inbox</button></div>
-                <div><button style={buttonStyle}>Profile</button></div>
+                <button style={buttonStyle} onClick={() => routeChange('/dashboard')}>Homepage</button>
+                <div><button style={buttonStyle} onClick={() => routeChange('/hotdog')}>Inbox</button></div>
+                <div><button style={buttonStyle} onClick={() => routeChange('/profile')}>Profile</button></div>
                 <div><button style={buttonStyle}>Message</button></div>
-                <div><button style={buttonStyle}>Projects</button></div>
-                <div><button style={buttonStyle}>Your Projects</button></div>
+                <div><button style={buttonStyle} onClick={() => routeChange('/people')}>Projects</button></div>
+                <div><button style={buttonStyle} onClick={() => routeChange('/people')}>Your Projects</button></div>
                 <div><button style={buttonStyle}>Friends</button></div>
                 <div><button style={buttonStyle}>Settings</button></div>
             </div>
